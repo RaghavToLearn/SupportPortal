@@ -1,1 +1,25 @@
-# SupportPortal.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State Selection</title>
+</head>
+<body>
+
+<h2>Select a State</h2>
+
+<form>
+  <label for="state">Choose a state:</label>
+  <select id="state" name="state">
+    <option value="Alabama">Alabama</option>
+    <option value="Alaska">Alaska</option>
+    <option value="Arizona">Arizona</option>
+    <option value="Arkansas">Arkansas</option>
+    <option value="California">California</option>
+    <!-- Add more options for other states as needed -->
+  </select>
+</form>
+
+</body>
+</html>

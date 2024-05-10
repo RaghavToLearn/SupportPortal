@@ -1,68 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Country Rates</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    select {
-      padding: 5px;
-      font-size: 16px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State Selection</title>
 </head>
 <body>
 
-<h2>Select a Country</h2>
+<h2>Select a State</h2>
 
-<select id="countrySelect" onchange="showRates()">
-  <option value="">Select Country</option>
-  <option value="US">United States</option>
-  <option value="UK">United Kingdom</option>
-  <option value="Canada">Canada</option>
-  <option value="EU">European Union</option>
-  <option value="South Africa">South Africa</option>
-  <option value="Nigeria">Nigeria</option>
-</select>
-
-<div id="ratesDetails" style="margin-top: 20px;"></div>
-
-<script>
-  function showRates() {
-    var selectElement = document.getElementById("countrySelect");
-    var selectedCountry = selectElement.value;
-    var ratesDetailsDiv = document.getElementById("ratesDetails");
-    var ratesDetails = "";
-
-    switch(selectedCountry) {
-      case "US":
-        ratesDetails = "<h3>United States</h3>" +
-                       "<p>Monthly Charge: $950 - $1,360</p>" +
-                       "<p>Currency: USD</p>" +
-                       "<p>Working Hours: 2 hours per day, 5 days a week</p>" +
-                       "<p>Payment Schedule: $475 - $680 every 15 days</p>";
-        break;
-      case "UK":
-        ratesDetails = "<h3>United Kingdom</h3>" +
-                       "<p>Monthly Charge: £680 - £970</p>" +
-                       "<p>Currency: GBP</p>" +
-                       "<p>Working Hours: 2 hours per day, 5 days a week</p>" +
-                       "<p>Payment Schedule: £340 - £485 every 15 days</p>";
-        break;
-      // Add cases for other countries here
-      // Canada, EU, South Africa, Nigeria
-
-      default:
-        ratesDetails = "<p>Please select a country to view rates.</p>";
-        break;
-    }
-
-    ratesDetailsDiv.innerHTML = ratesDetails;
-  }
-</script>
+<form>
+  <label for="state">Choose a state:</label>
+  <select id="state" name="state">
+    <option value="Alabama">Alabama</option>
+    <option value="Alaska">Alaska</option>
+    <option value="Arizona">Arizona</option>
+    <option value="Arkansas">Arkansas</option>
+    <option value="California">California</option>
+    <!-- Add more options for other states as needed -->
+  </select>
+</form>
 
 </body>
 </html>
